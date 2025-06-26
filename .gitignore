@@ -1,0 +1,9 @@
+# Ignore environment files and dependencies
+.env
+node_modules/
+
+# Optional but recommended
+dist/
+build/
+.DS_Store
+npm-debug.log*
