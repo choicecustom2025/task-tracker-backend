@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: task-tracker-backend
+    env: node
+    region: oregon
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: MONGO_URI
+        value: your-mongodb-connection-string
+      - key: JWT_SECRET
+        value: your-secret-key
+      - key: PORT
+        value: 10000
